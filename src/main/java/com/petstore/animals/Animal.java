@@ -4,14 +4,14 @@ import com.petstore.items.Food;
 
 import java.util.ArrayList;
 
-public abstract class Animals {
+public abstract class Animal {
     private Integer age;
     private static Integer idIndex = 1;
     private final Integer id;
     private Breed breed;
     private ArrayList<Food> eatenMeals;
 
-    public Animals(Integer age) {
+    public Animal(Integer age, Breed breed) {
         this.age = age;
         this.breed = breed;
         this.eatenMeals = new ArrayList<>();

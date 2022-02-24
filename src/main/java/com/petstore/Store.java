@@ -5,9 +5,8 @@ import java.util.Scanner;
 
 public class Store {
 
-        public static void runStore(){
+        public static void customerGreeting(){
             System.out.println("Welcome to our Pet Store");
-            System.out.println("Would you like to purchase a pet and/or supplies?");
         }
 
     private String collectUserResponse(){

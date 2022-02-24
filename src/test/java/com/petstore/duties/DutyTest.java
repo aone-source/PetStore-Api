@@ -1,12 +1,10 @@
 package com.petstore.duties;
-
 import com.petstore.people.Employee;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 
-public class AllDutyTest {
+public class DutyTest {
 
     @Test
     public void performDutyTest(){

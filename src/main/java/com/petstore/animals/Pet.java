@@ -2,10 +2,13 @@ package com.petstore.animals;
 
 import java.util.ArrayList;
 
-public  class Pet extends Animals {
-    private static ArrayList<Animals> pets = new ArrayList<>();
+public  class Pet extends Animal {
+    private static ArrayList<Animal> pets = new ArrayList<>();
 
-    public Pet(Integer age) {super(age);}
+    public Pet(Integer age, Breed breed) {
+        super(age, breed);
+    }
+
 
     public static void add(Pet pet){pets.add(pet);}
     public static void remove(Integer index){pets.remove(index);}
