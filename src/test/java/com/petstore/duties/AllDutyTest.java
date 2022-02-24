@@ -1,7 +1,6 @@
 package com.petstore.duties;
 
 import com.petstore.people.Employee;
-import com.petstore.people.Manager;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

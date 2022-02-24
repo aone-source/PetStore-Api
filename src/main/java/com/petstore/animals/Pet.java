@@ -1,43 +1,30 @@
 package com.petstore.animals;
 
-import com.petstore.things.Food;
-
 import java.util.ArrayList;
 
-public abstract class Pet implements Animal {
-    private Integer age;
+public  class Pet extends Animals {
+    private static ArrayList<Animals> pets = new ArrayList<>();
 
-    private ArrayList<Food> eatenMeals;
-    private Integer idIndex = 1;
-    private final Integer id;
+    public Pet(Integer age) {super(age);}
 
-
-    public Pet(Integer age) {
-        this.age = age;
-
-        this.eatenMeals = new ArrayList<>();
-        this.id = idIndex;
+    public static void add(Pet pet){pets.add(pet);}
+    public static void remove(Integer index){pets.remove(index);}
+    public static Integer getAnimalById(Integer id, Integer index){return null;}
+    public static Integer getNumberOfPets() {return pets.size();}
+    public static void clear() {
+        pets.clear();
     }
 
-    public Integer getAge() {
-        return age;
-    }
 
-    public void setAge(Integer age) {
-        this.age = age;
-    }
 
-    public void eat(Food food) {
-        eatenMeals.add(food);
-    }
 
-    public Integer getNumberOfMealsEaten() {
-        return eatenMeals.size();
-    }
 
-    @Override
-    public Integer getId() {
-        return id;
-    }
+
+
+
+
+
+
+
 }
 

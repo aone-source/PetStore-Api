@@ -2,18 +2,26 @@ package com.petstore.people;
 
 import java.util.ArrayList;
 
-public class Customer extends Person {
-    private ArrayList<ArrayList> purchases;
+public class Customer<I> extends Person {
+    private ArrayList<I> purchases;
+
     Customer(String fullName, Integer age, String email) {
         super(fullName, age, email);
-        this.purchases = purchases;
     }
 
-    public ArrayList<ArrayList> getPurchases() {
+    public void addToPurchases(I item) {
+        purchases.add(item);
+    }
+
+    public ArrayList<I> getPurchases() {
         return purchases;
     }
 
-    public void setPurchases(ArrayList<ArrayList> purchases) {
+    public void setPurchases(ArrayList<I> purchases) {
         this.purchases = purchases;
+    }
+
+    public void clearPurchases(I item) {
+        purchases.clear();
     }
 }
