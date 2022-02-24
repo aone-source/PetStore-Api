@@ -13,18 +13,18 @@ public class ManagerialDuty <E> extends Duty {
 
     @Override
     public String performDuty() {
-        return openStore();
+        StringBuilder output = new StringBuilder();
+        output.append(openStore() + "\n");
+        output.append(makeSchedules() + "\n");
+        output.append(closeStore() + "\n");
+
+        return output.toString().trim();
     }
+
 
     private String openStore(){return getName() + " : open store";}
 
     private String makeSchedules(){return getName() + " : schedules are made";}
-
-    public void hireEmployee(E employee) {
-        employees.add(employee);
-    }
-
-    private void fireEmployees(E employee){employees.remove(employee);}
 
     private String closeStore(){return getName() + " : close store";}
 }

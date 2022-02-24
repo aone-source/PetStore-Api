@@ -5,16 +5,17 @@ import com.petstore.items.Food;
 import java.util.ArrayList;
 
 public abstract class Animal {
-    private Integer age;
     private static Integer idIndex = 1;
     private final Integer id;
+    private Integer age;
+    private Integer price = 20;
     private Breed breed;
-    private ArrayList<Food> eatenMeals;
+
 
     public Animal(Integer age, Breed breed) {
         this.age = age;
         this.breed = breed;
-        this.eatenMeals = new ArrayList<>();
+        this.price = price;
         this.id = idIndex;
     }
 
@@ -24,14 +25,6 @@ public abstract class Animal {
 
     public void setAge(Integer age) {
         this.age = age;
-    }
-
-    public void eat(Food food) {
-        eatenMeals.add(food);
-    }
-
-    public Integer getNumberOfMealsEaten() {
-        return eatenMeals.size();
     }
 
     public static void setIdIndex(Integer update) {
