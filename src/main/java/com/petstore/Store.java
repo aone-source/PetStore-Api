@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Store {
 
+
         public static void customerGreeting(){
             System.out.println("Welcome to our Pet Store");
         }

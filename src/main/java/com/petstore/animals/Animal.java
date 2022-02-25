@@ -1,18 +1,16 @@
 package com.petstore.animals;
 
-import com.petstore.items.Food;
-
-import java.util.ArrayList;
+import java.util.concurrent.ForkJoinWorkerThread;
 
 public abstract class Animal {
     private static Integer idIndex = 1;
     private final Integer id;
     private Integer age;
-    private Integer price = 20;
+    private Integer price;
     private Breed breed;
 
 
-    public Animal(Integer age, Breed breed) {
+    public Animal(Integer age, Breed breed, Integer price) {
         this.age = age;
         this.breed = breed;
         this.price = price;
@@ -33,6 +31,30 @@ public abstract class Animal {
 
     public Integer getId() {
         return id;
+    }
+
+    public Integer getPrice() {
+        return price;
+    }
+
+    public void setPrice(Integer price) {
+        this.price = price;
+    }
+
+    public Breed getBreed() {
+        return breed;
+    }
+
+    public void setBreed(Breed breed) {
+        this.breed = breed;
+    }
+
+    @Override
+    public String toString() {
+        return "Breed:" + breed +
+                ", Id: " + id +
+                ", Age: " + age +
+                ", Price: " + price;
     }
 }
 

@@ -1,31 +1,25 @@
 package com.petstore.people;
+import com.petstore.items.Purchase;
 
-import java.util.ArrayList;
+public class Customer extends Person {
+    private Purchase purchase;
 
-public class Customer<I> extends Person {
 
-    private ArrayList<I> purchases;
-
-    Customer(String fullName, Integer age, String email) {super(fullName, age, email);
-        this.purchases = new ArrayList<>();
+    Customer(String fullName, Integer age, String email, Purchase purchase) {
+        super(fullName, age, email);
+        this.purchase = purchase;
     }
 
-    public void addToPurchases(I item) {
-        purchases.add(item);
+    public Purchase getPurchase() {
+        return purchase;
     }
 
-    public void removePurchases(I item) {
-        purchases.remove(item);
+    public void setPurchase(Purchase purchase) {
+        this.purchase = purchase;
     }
 
-    public ArrayList<I> getPurchases() {
-        return purchases;
+    @Override
+    public String toString() {
+        return "Customer: " + getFullName() + " " + purchase;
     }
-
-    public void clearPurchases(I item) {
-        purchases.clear();
-    }
-
-
-
 }

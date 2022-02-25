@@ -45,5 +45,12 @@ public abstract class Person {
     public Integer getId() {
         return id;
     }
+
+    @Override
+    public String toString() {
+        return "Name: " + fullName + '\'' +
+                ", email:" + email + '\'' +
+                ", id: " + id;
+    }
 }
 

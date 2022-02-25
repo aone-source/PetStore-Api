@@ -13,4 +13,8 @@ public abstract class Duty {
     }
     public abstract String  performDuty();
 
+    @Override
+    public String toString() {
+        return name;
+    }
 }

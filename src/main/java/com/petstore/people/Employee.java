@@ -12,6 +12,14 @@ public class Employee extends Person {
         this.duties = duties;
     }
 
+    public ArrayList<Duty> getDuties() {
+        return duties;
+    }
+
+    public void setDuties(ArrayList<Duty> duties) {
+        this.duties = duties;
+    }
+
     public String performDuty(int index){
         String output = duties.get(index).performDuty();
         return output;
@@ -24,6 +32,12 @@ public class Employee extends Person {
             builder.append(duty.performDuty()+"\n");
         }
         return builder.toString().trim();
+    }
+
+    @Override
+    public String toString() {
+        return "Employee: " + getFullName() +
+                ", Duties: " + duties;
     }
 }
 

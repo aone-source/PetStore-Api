@@ -1,0 +1,8 @@
+package com.petstore.items;
+
+public enum ItemEnum {
+    DOG_FOOD, PREMIUM_DOG_FOOD, BIRD_FOOD, PREMIUM_BIRD_FOOD,
+    LEASH, DOG_TOY, DOG_CRATE,
+    PERCH, BIRD_TOY, BIRD_CAGE,
+    GROOMING, TRAINING, NONE
+}

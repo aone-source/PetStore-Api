@@ -12,7 +12,7 @@ public class DutyTest {
         ArrayList<Duty> duties = new ArrayList<>();
         JanitorialDuty janitorialDuty = new JanitorialDuty();
         duties.add(janitorialDuty);
-        Employee janitor = new Employee ("Bob", 45,"bob@petshop.com", duties);
+        Employee janitor = new Employee ("Ashley", 48,"ashley@petstore.con", duties);
         String expected = "JanitorialDuty : all clean";
         String actual = janitor.performDuty(0);
         Assertions.assertEquals(expected, actual);
@@ -26,10 +26,9 @@ public class DutyTest {
         ManagerialDuty managerialDuty = new ManagerialDuty();
         duties.add(janitorialDuty);
         duties.add(managerialDuty);
-        Employee janitor = new Employee ("Bob", 45,"bob@petshop.com", duties);
+        Employee janitor = new Employee ("Ashley", 48,"ashley@petstore.com", duties);
         String expected = "Duties performed:\nJanitorialDuty : all clean\nManagerialDuty : open store";
         String actual = janitor.performAllDuties();
         Assertions.assertEquals(expected, actual);
     }
-
 }

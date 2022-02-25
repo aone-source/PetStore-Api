@@ -4,12 +4,9 @@ import com.petstore.people.Employee;
 
 import java.util.ArrayList;
 
-public class ManagerialDuty <E> extends Duty {
-    private ArrayList<E> employees;
+public class ManagerialDuty extends Duty {
 
-    public ManagerialDuty() {super("ManagerialDuty");
-    this.employees = new ArrayList<>();
-    }
+    public ManagerialDuty() {super("ManagerialDuty");}
 
     @Override
     public String performDuty() {
