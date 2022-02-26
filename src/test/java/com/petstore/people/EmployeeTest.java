@@ -1,6 +1,6 @@
 package com.petstore.people;
 import com.petstore.duties.Duty;
-import com.petstore.duties.ManagerialDuty;
+import com.petstore.duties.Manager;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,13 +16,13 @@ public class EmployeeTest {
 
     @Test
     public void constructorTest() {
-        ManagerialDuty manager = new ManagerialDuty();
+        Manager manager = new Manager();
         ArrayList<Duty> duties = new ArrayList<>();
         duties.add(manager);
 
         Employee employee = new Employee("Yennifer Campos", 25,"yennifer@petstore.com",duties);
 
-        String expected = "Employee: Yennifer Campos, Duties: [ManagerialDuty]";
+        String expected = "Employee: Yennifer Campos, Duties: [Manager]";
         String actual = employee.toString();
 
         Assertions.assertEquals(expected,actual);
@@ -30,7 +30,7 @@ public class EmployeeTest {
 
     @Test
     public void getNameTest() {
-        ManagerialDuty manager = new ManagerialDuty();
+        Manager manager = new Manager();
         ArrayList<Duty> duties = new ArrayList<>();
         duties.add(manager);
 
@@ -44,7 +44,7 @@ public class EmployeeTest {
 
     @Test
     public void setNameTest() {
-        ManagerialDuty manager = new ManagerialDuty();
+        Manager manager = new Manager();
         ArrayList<Duty> duties = new ArrayList<>();
         duties.add(manager);
 
@@ -59,7 +59,7 @@ public class EmployeeTest {
 
     @Test
     public void getAgeTest() {
-        ManagerialDuty manager = new ManagerialDuty();
+        Manager manager = new Manager();
         ArrayList<Duty> duties = new ArrayList<>();
         duties.add(manager);
 
@@ -73,7 +73,7 @@ public class EmployeeTest {
 
     @Test
     public void setAgeTest() {
-        ManagerialDuty manager = new ManagerialDuty();
+        Manager manager = new Manager();
         ArrayList<Duty> duties = new ArrayList<>();
         duties.add(manager);
 
@@ -89,7 +89,7 @@ public class EmployeeTest {
 
     @Test
     public void getEmailTest() {
-        ManagerialDuty manager = new ManagerialDuty();
+        Manager manager = new Manager();
         ArrayList<Duty> duties = new ArrayList<>();
         duties.add(manager);
 
@@ -104,7 +104,7 @@ public class EmployeeTest {
 
     @Test
     public void setEmailTest() {
-        ManagerialDuty manager = new ManagerialDuty();
+        Manager manager = new Manager();
         ArrayList<Duty> duties = new ArrayList<>();
         duties.add(manager);
 
@@ -120,7 +120,7 @@ public class EmployeeTest {
 
     @Test
     public void getDutiesTest() {
-        ManagerialDuty manager = new ManagerialDuty();
+        Manager manager = new Manager();
         ArrayList<Duty> duties = new ArrayList<>();
         duties.add(manager);
 
@@ -134,7 +134,7 @@ public class EmployeeTest {
 
     @Test
     public void setDutiesTest() {
-        ManagerialDuty manager = new ManagerialDuty();
+        Manager manager = new Manager();
         ArrayList<Duty> duties = new ArrayList<>();
         duties.add(manager);
 

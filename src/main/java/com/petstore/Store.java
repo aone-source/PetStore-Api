@@ -5,10 +5,9 @@ import java.util.Scanner;
 
 public class Store {
 
+    public Store (){}
 
-        public static void customerGreeting(){
-            System.out.println("Welcome to our Pet Store");
-        }
+    public static void customerGreeting(){System.out.println("Welcome to our Pet Store");}
 
     private String collectUserResponse(){
         String response="";
@@ -26,16 +25,15 @@ public class Store {
         return response;
     }
 
-        public static void customerChoice(){}
+    public static void customerChoice(){}
 
-        public static void options(){
-            //switch statement
-        }
+    public static void options(){}
 
-        public static void printReceipt(){}
+    public static void printReceipt(){}
 
-        public static void start(){}
-    }
+    public static void start(){}
+
+}
 
 
 

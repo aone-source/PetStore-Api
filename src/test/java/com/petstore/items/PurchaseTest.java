@@ -11,7 +11,7 @@ public class PurchaseTest {
 
     @Test
     public void constructorTest(){
-        String expected = "";
+        String expected = "Purchase: Animal: Breed:CANARY, Id: 1, Age: 1, Price: 10 Item: BIRD_CAGE, Price: 10 Dollars";
         String actual = purchase.toString();
 
         Assertions.assertEquals(expected, actual);

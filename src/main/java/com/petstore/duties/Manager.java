@@ -1,12 +1,8 @@
 package com.petstore.duties;
 
-import com.petstore.people.Employee;
+public class Manager extends Duty {
 
-import java.util.ArrayList;
-
-public class ManagerialDuty extends Duty {
-
-    public ManagerialDuty() {super("ManagerialDuty");}
+    public Manager() {super("Manager");}
 
     @Override
     public String performDuty() {

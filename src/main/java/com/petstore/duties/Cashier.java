@@ -1,7 +1,7 @@
 package com.petstore.duties;
 
-public class CashierDuty extends Duty {
-    public CashierDuty() {super("CashierDuty");}
+public class Cashier extends Duty {
+    public Cashier() {super("Cashier");}
 
     @Override
     public String performDuty() {

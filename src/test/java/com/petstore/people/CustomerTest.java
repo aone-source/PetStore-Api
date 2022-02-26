@@ -21,7 +21,7 @@ public class CustomerTest {
 
     @Test
     public void constructorTest() {
-        String expected = "Customer: Michelle McCool Purchase: Animal: Breed:CANARY, Id: 1, Age: 1, Price: 20 Item: BIRD_CAGE, Price: 10 Dollars";
+        String expected = "Customer: Michelle McCool Purchase: Animal: Breed:CANARY, Id: 1, Age: 1, Price: 10 Item: BIRD_CAGE, Price: 10 Dollars";
         String actual = customer.toString();
 
         Assertions.assertEquals(expected,actual);
